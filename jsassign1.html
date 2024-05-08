@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="module">
+        import ex,{whitespace,vowels,maskingString,pallin,truncate,capital,check,occur,mail,rev,dens,exten} from "./asignment1.js";
+        let text= whitespace("  hello world!  ");
+        console.log(text)
+        let text2= vowels("john doe");
+        console.log(text2);
+        const inputStr = "9876543210";
+        const maskedStr = maskingString(inputStr, 0, 6);
+        console.log(maskedStr);
+        let text4= pallin("hello");
+        console.log(text4);
+        let text5=truncate("India is my country",10);
+        console.log(text5);
+        let text6=capital("I aM vIlas");
+        console.log(text6);
+        let text7=check("I xyz vIlas");
+        console.log(text7);
+        let text8=occur("I xyz xyz");
+        console.log(text8);
+        let text9=mail("abc@gmail.com");
+        console.log(text9);
+        let text10=rev("abcdef");
+        console.log(text10);
+        let text11=dens("abc def ghi");
+        console.log(text11);
+        let text12=exten("abc.html");
+        console.log(text12);
+    </script>
+</body>
+</html>
